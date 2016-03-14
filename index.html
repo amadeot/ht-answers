@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hashtags</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.1.min.js"></script>
+  <script type="text/javascript" src="main.js"></script>
+</head>
+<body>
+  <div class="section questions">
+    <h1>Questions</h1>
+    <ol>
+      <li>
+        HTTPS is a more secure version of HTTP that uses encryption so that others cannot read information being sent between the server and client.
+      </li>
+      <li>
+        A HTTP GET request requests information from a server and a POST request sends information to the server. 
+      </li>
+      <li>
+        2xx status codes mean that the server connected and pulled information from the server as expected. 4xx status codes mean that the client requested a resource that was not found for one reason or another.
+      </li>
+      <li>
+        Ajax is a combination of several technologies, primarily Javascript, which allows a client to pull new information from a server without refreshing the page. It is useful whenever you want to request or send information from a page without navigating away from it.
+      </li>
+      <li>
+        Responsive design is a way to format a web page so that it changes its layout depending on the size of the screen and type of device the user is using.
+      </li>
+      <li>
+        The first targets every < div > tag, the second targets the id of div, and the third targets everything with the class of div.
+      </li>
+      <li>
+        The first loads an external script, the second contains javascript within the tag.
+      </li>
+      <li>
+        The first defines a function, the second both defines and runs the function.
+      </li>
+    </ol>
+  </div>
+  <div class="section practical-1">
+    <h1>Practical Section 1</h1>
+    <div id="red">
+      <div id="green"></div>
+    </div>
+    <div id="blue"></div>
+  </div>
+  <div class="section practical-2">
+    <h1>Practical Section 2</h1>
+    <ul>
+      <li>
+        If the pixel is cached, it won't be loaded whenever someone loads the page, making it impossible to track more than once.
+      </li>
+      <li>
+        There are several Meta tags, which work differently across different browsers. One way would be to include this tag in the head of the page hosting the image: < meta http-equiv="pragma" content="no-cache"/ >
+        (This answer was researched, credit goes to: http://stackoverflow.com/questions/10314174/difference-between-pragma-and-cache-control-headers)
+
+      </li>
+      <li>
+        Serving HTTP over HTTPS can cause errors, you could use a script tag instead of an img tag, or you could  remove the http, so that the src calls "//hashtag-analytics.com/12345/pixel.gif" and the request should autofill with http or https depending on the website.
+      </li>
+      <li>
+        You could grab any information about the client that is detectable, like the type of device, the IP address, the time it was viewed, and for how long.
+      </li>
+      <li>
+        If you're loading javascript, in theory anything within reason could be tracked. Whenever a user makes a keystroke you could have an ajax post to an outside server. If a user pauses a video on the page, you could see how long they paused it for. The only limits are really what kind of protection is on the browser and the skill of the person writing the javascript.
+      </li>
+    </ul>
+  </div>
+  <div class="section practical-3">
+    <h1>Practical Section 3</h1>
+    <p>Available on the Javascript Console</p>
+    <img id="myimage" src="./kitten.jpg">
+  </div>
+</body>
+</html>
